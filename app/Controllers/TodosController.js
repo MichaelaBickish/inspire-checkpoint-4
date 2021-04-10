@@ -14,14 +14,14 @@ function _draw() {
     '<div class="col text-center"><p><em>no todos to display</em><p></div>'
     }
 
-
+    let todoTotal = ProxyState.todos.length 
     let todosLeft = ProxyState.todos.filter(t => t.completed == false).length
     
-    document.getElementById('tasks-left').innerHTML = '${todosLeft}'
+    document.getElementById('tasks-left').innerHTML = `<p class="mb-0">${todosLeft} left | ${todoTotal} total</p>`
 
-    
-  console.log('hello from controller')
+//   console.log('hello from controller')
 }
+
 
 
 //Public

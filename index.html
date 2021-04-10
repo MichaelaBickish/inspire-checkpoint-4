@@ -41,15 +41,14 @@
                     <div class="col d-flex justify-content-end align-items-start">weather</div>
 
                     <!-- to do card -->
-                    <div class="col d-flex justify-content-end align-items-end">
-                        <div class="list-card shadow rounded bg-gray mb-5">
+                    <div class="col d-flex flex-column justify-content-end align-items-end">
+                        <div class="list-card shadow rounded bg-gray mb-2">
                             <div class="p-2 d-flex justify-content-between">
+
                                 <div class="d-flex flex-column">
-                                    <h5 class="mt-2 text-light">to-dos</h5>
-                                    <div class="text-light" id="tasks-left">tasks left / total tasks</div>
-                                    <div class="text-light" id="total-tasks">tasks left / total tasks</div>
+                                    <div class="text-light" id="tasks-left"></div>
                                 </div>
-                                <i class="fas fa-times ml-2" onclick="" title='delete'></i>
+                                
                             </div>
                             <div class="">
                                 <p id="single-task">
@@ -63,7 +62,14 @@
                                     <i class="fas fa-plus"></i></button>
                             </form>
                         </div>
+                            <!-- to do mini title -->
+                        <div class="card shadow rounded bg-gray mb-2">
+                            <div class="card-body p-0">
+                              <p class="card-title mb-0 mx-1">To Do</p>
+                            </div>
+                        </div>   
                     </div>
+
                 </div>    
             </div>
         </div>

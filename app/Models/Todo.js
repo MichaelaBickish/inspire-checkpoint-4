@@ -1,7 +1,6 @@
 export default class Todo {
-    constructor({id, user, description, completed = false}) {
+    constructor({id, description, completed = false}) {
         this.id = id
-        this.user = user
         this.description = description
         this.completed = completed
     }

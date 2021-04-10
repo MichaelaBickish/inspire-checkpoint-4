@@ -9,12 +9,12 @@ class TodosService {
         let res = await sandBoxApi.get('mickbick/todos')
         
         ProxyState.todos = res.data.map(t => new Todo(t))
-        console.log(ProxyState.todos)
+        // console.log(ProxyState.todos)
     }
 
     async addTodo(newTodo){
         let res = await sandBoxApi.post('mickbick/todos', newTodo)
-        console.log(res)
+        // console.log(res)
 
         let todo = new Todo(res.data)
         ProxyState.todos = [...ProxyState.todos, todo]
