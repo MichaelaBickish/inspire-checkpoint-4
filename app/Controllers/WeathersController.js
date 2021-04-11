@@ -13,7 +13,7 @@ let template = ''
 template += /*html*/ `
     <div class="card bg-transparent mt-2">
         <div class="card-body px-2 py-2 text-center text-light" onclick="app.weathersController.tempToggle()">
-            <h5 id = "temp">${farenheit}°F</h5> <p class="mb-0">${weather.name}</p>
+            <h5 id = "temp font-weight-bold">${farenheit}°F</h5> <p class="mb-0 font-weight-bold">${weather.name}</p>
         </div></div>`
 
 document.getElementById("weather").innerHTML =  template

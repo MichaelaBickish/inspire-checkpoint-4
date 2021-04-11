@@ -16,7 +16,7 @@ function _draw() {
     let todoTotal = ProxyState.todos.length 
     let todosLeft = ProxyState.todos.filter(t => t.completed == false).length
     
-    document.getElementById('tasks-left').innerHTML = `<p class="mb-0 text-light">to-dos left: ${todosLeft}</p>`
+    document.getElementById('tasks-left').innerHTML = `<p class="mb-0 text-light text-right">${todosLeft} remaining</p>`
 
 //   console.log('hello from controller')
 }
