@@ -59,14 +59,15 @@
                                 </p>
                             </div>
                             <form class="d-flex p-2" onsubmit="app.todosController.addTodo(event)">
-                                <input type="text" name="addTodo" id="addTodo" class="form-control opaque" placeholder="add task..."
+                                <input type="text" name="addTodo" id="addTodo" class="form-control 
+                                bg-transparent border-bottom" placeholder="add a to-do..." title="add a to-do..."
                                     aria-describedby="helpId" required minlength="3" maxlength="50">
-                                <button type="submit" class="btn opaque ml-1" title='add task'>
+                                <button type="submit" class="btn opaque ml-1" title='submit new to-do'>
                                     <i class="fas fa-plus text-light"></i></button>
                             </form>
                         </div>
                             <!-- to do mini title -->
-                        <span class="badge badge-pill mb-2 opaque text-light"><p class=" mb-0 font-weight-bold">to do</p></span>  
+                        <span class="badge badge-pill mb-2 opaque text-light todo-date"><p class=" mb-0 font-weight-bold">to do</p></span>  
                     </div>
 
                 </div>    
