@@ -8,6 +8,12 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   /** @type {Todo[]} */
   todos = []
+  /**@type {Weather} */
+  weather = null
+  /**@type {Quote} */
+  quotes = []
+   /**@type {Image} */
+   images = null
 }
 
 

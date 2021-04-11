@@ -13,7 +13,6 @@ function _draw() {
     document.getElementById('single-task').innerHTML = 
     '<div class="col text-center"><p><em>no todos to display</em><p></div>'
     }
-
     let todoTotal = ProxyState.todos.length 
     let todosLeft = ProxyState.todos.filter(t => t.completed == false).length
     

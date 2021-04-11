@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body id="body-img">
 
 
     <main class="container-fluid">
@@ -21,24 +21,27 @@
         
         <div class="row">
             <!-- left col -->
-            <div class="col-3 min-vh-100">
+            <!-- <div class="col-3 min-vh-100">
 
-            </div>
+            </div> -->
 
             <!-- clock / quote col -->
-            <div class="col-6">
+            <div class="col-6 col-md-8">
                 <div class="row flex-column min-vh-100">
-                    <div class="col d-flex justify-content-center align-items-end">clock</div>
-                    <div class="col d-flex justify-content-center align-items-end">quote</div>
+                    <div class="col d-flex justify-content-end align-items-end" id="clock"></div>
+                    <div class="col d-flex justify-content-center align-items-end" id="quote"></div>
                 </div>
             </div>
 
 
 
             <!-- weather / to-do card col -->
-            <div class="col-3">
+            <div class="col-6 col-md-4">
                 <div class="row flex-column min-vh-100">
-                    <div class="col d-flex justify-content-end align-items-start">weather</div>
+                    <div class="col d-flex justify-content-end align-items-start" id="weather">
+
+                    </div>
+
 
                     <!-- to do card -->
                     <div class="col d-flex flex-column justify-content-end align-items-end">
