@@ -7,9 +7,9 @@ function _draw() {
   let quotes = ProxyState.quotes;
   let qAuth = document.getElementById('auth')
 
-  document.getElementById("quote").innerHTML = /*html*/`
-  <blockquote class="blockquote text-center font-weight-light" title="- ${quotes.author}">
-  <p class="mb-0">${quotes.content}</p></blockquote>`
+  document.getElementById("quote").innerHTML = /*html*/`<div class="list-card shadow rounded opaque">
+  <blockquote class="blockquote text-center text-light font-weight-light" title="- ${quotes.author}">
+  <p class="mb-0">${quotes.content}</p></blockquote></div>`
 }
 
 //Public

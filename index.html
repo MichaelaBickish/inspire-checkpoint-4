@@ -45,7 +45,7 @@
 
                     <!-- to do card -->
                     <div class="col d-flex flex-column justify-content-end align-items-end">
-                        <div class="list-card shadow rounded bg-gray mb-2">
+                        <div class="list-card shadow rounded mb-2 opaque">
                             <div class="p-2 d-flex justify-content-between">
 
                                 <div class="d-flex flex-column">
@@ -59,18 +59,14 @@
                                 </p>
                             </div>
                             <form class="d-flex p-2" onsubmit="app.todosController.addTodo(event)">
-                                <input type="text" name="addTodo" id="addTodo" class="form-control" placeholder="add task..."
+                                <input type="text" name="addTodo" id="addTodo" class="form-control opaque" placeholder="add task..."
                                     aria-describedby="helpId" required minlength="3" maxlength="50">
-                                <button type="submit" class="btn btn-success ml-1" title='add task'>
-                                    <i class="fas fa-plus"></i></button>
+                                <button type="submit" class="btn opaque ml-1" title='add task'>
+                                    <i class="fas fa-plus text-light"></i></button>
                             </form>
                         </div>
                             <!-- to do mini title -->
-                        <div class="card shadow rounded bg-gray mb-2">
-                            <div class="card-body p-0">
-                              <p class="card-title mb-0 mx-1">To Do</p>
-                            </div>
-                        </div>   
+                        <span class="badge badge-pill badge-dark mb-2 opaque">to do</span>  
                     </div>
 
                 </div>    

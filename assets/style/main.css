@@ -64,6 +64,10 @@ body {
   background-color: #f2f2f2;
 }
 
+.opaque {
+  background: rgba(0, 7, 0, 0.4);
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }

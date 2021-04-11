@@ -12,7 +12,7 @@ let farenheit = Math.round(((weather.main.temp - 273.15) * 1.8) + 32)
 let template = ''
 template += /*html*/ `
     <div class="card bg-transparent mt-2">
-        <div class="card-body px-2 py-2 text-center" onclick="app.weathersController.tempToggle()">
+        <div class="card-body px-2 py-2 text-center text-light" onclick="app.weathersController.tempToggle()">
             <h5 id = "temp">${farenheit}°F</h5> <p class="mb-0">${weather.name}</p>
         </div></div>`
 

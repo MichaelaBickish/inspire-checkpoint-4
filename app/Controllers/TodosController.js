@@ -11,12 +11,12 @@ function _draw() {
 
     if (todos.length == 0) {
     document.getElementById('single-task').innerHTML = 
-    '<div class="col text-center"><p><em>no todos to display</em><p></div>'
+    '<div class="col text-center text-light"><p><em>no todos to display</em><p></div>'
     }
     let todoTotal = ProxyState.todos.length 
     let todosLeft = ProxyState.todos.filter(t => t.completed == false).length
     
-    document.getElementById('tasks-left').innerHTML = `<p class="mb-0">${todosLeft} left | ${todoTotal} total</p>`
+    document.getElementById('tasks-left').innerHTML = `<p class="mb-0 text-light">to-dos left: ${todosLeft}</p>`
 
 //   console.log('hello from controller')
 }

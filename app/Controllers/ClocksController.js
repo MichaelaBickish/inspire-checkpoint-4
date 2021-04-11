@@ -19,7 +19,9 @@ function _draw() {
     
 
     let template = ''
-    template += /**html */`<h1 class="display-4 text-dark mx-1">${hours} : ${minutes} <h4 class="text-muted text-center mb-3"> ${timeofDay}</h4></h1>`
+    template += /**html */`<div class ="list-card shadow rounded opaque">
+    <h1 class="display-4 text-light mx-1">${hours} : ${minutes} 
+    <h4 class="text-light text-center mb-3"> ${timeofDay}</h4></h1></div>`
     document.getElementById('clock').innerHTML = template
 }
 
